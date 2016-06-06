@@ -1,5 +1,9 @@
 #FT Typography [![Build Status](https://travis-ci.org/Financial-Times/o-ft-typography.png?branch=master)](https://travis-ci.org/Financial-Times/o-ft-typography)
 
+### This module is now deprecated, please use [o-typography](http://registry.origami.ft.com/components/o-typography) instead.
+
+***
+
 Typographical styles for FT branded sites - fonts, weight, colors, sizes and vertical rhythm.
 
 ## Overview
@@ -9,7 +13,7 @@ This module provides styles for Headings, Titles, Leads, Metadata, and body cont
 Body content styles come in two categories:
 
 * **general**, used for informational pages, forms, application user interfaces etc.
-* **article**, used for editorial content. 
+* **article**, used for editorial content.
 
 ## Usage
 
@@ -30,7 +34,7 @@ The classes do not depend on any specific HTML element, but appropriate semantic
 
 	<h2 class="o-ft-typography-heading-medium">Heading medium</h2>
 
-See docs/demo.html for a full list of the classes provided and their effects. 
+See docs/demo.html for a full list of the classes provided and their effects.
 
 In addition to applying classes individual to elements, body styles can be applied to an HTML element and descendent `h2, h3, p, a, strong, em, small, sup, sub, ul, ol, li` elements will have styling applied.
 
@@ -81,7 +85,7 @@ When you're not consuming this module via the build service, by default this mod
 This can be turned off by setting a variable before you import the Sass:
 
 	@o-ft-typography-is-silent: false;
-	
+
 	@import "o-ft-typography/main";
 
 If you're not turning off silent mode, you will need to to load the fonts required by the typography you are using (due to the limitations of Sass' mixins, this cannot at present be done automatically):
